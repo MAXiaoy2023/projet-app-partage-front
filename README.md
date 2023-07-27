@@ -1,0 +1,1 @@
+Un projet de partage d'objet pour découvrir l'Angular.

@@ -1,0 +1,5 @@
+<h1> Tous les annonces</h1>
+<app-ad-lender-item [adLender]="item" (delete)="removeAdLender($event)" *ngFor="let item of list"/>
+
+<app-form-ad-lender (added)="addToList($event)"/>
+
