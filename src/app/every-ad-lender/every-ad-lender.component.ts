@@ -9,8 +9,10 @@ import { AdLenderService } from '../ad-lender.service';
   styleUrls: ['./every-ad-lender.component.css']
 })
 export class EveryAdLenderComponent implements OnInit {
-  adLender: AdLender;
-
+  adLender: AdLender ={
+    adTitle: '', adDescription: '', adCategory: '', adKeywords: '', adPicture: '', adStatus: true, city: '', createdDate: new Date,
+    user:''};
+  
   constructor(private route:ActivatedRoute, private adLenderService:AdLenderService){}
 
   ngOnInit(): void {

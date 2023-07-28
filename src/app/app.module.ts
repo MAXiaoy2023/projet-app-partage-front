@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { AdLenderItemComponent } from './ad-lender-item/ad-lender-item.component';
 import { EveryAdLenderComponent } from './every-ad-lender/every-ad-lender.component';
 import { FormAdLenderComponent } from './form-ad-lender/form-ad-lender.component';
-import { AdLenderComponent } from './ad-lender/ad-lender.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,13 +18,12 @@ import { AdLenderComponent } from './ad-lender/ad-lender.component';
     AdLenderItemComponent,
     EveryAdLenderComponent,
     FormAdLenderComponent,
-    AdLenderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
     HttpClientModule, 
-    FormsModule
+    FormsModule, BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

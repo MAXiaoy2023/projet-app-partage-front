@@ -1,1 +1,21 @@
+<form (ngSubmit)="handleSubmit()">
+<div>
+    <label for="adTitle">Ad Title</label>
+    <input type="text" name="adTitle" id="adTitle" [(ngModel)]="adLender.adTitle" required>
+</div>
+<div>
+    <label for="adDescription">Ad adDescription</label>
+    <input type="text" name="adDescription" id="adDescription" [(ngModel)]="adLender.adDescription" required>
+</div>
+<div>
+    <label for="adCategory">Ad Category</label>
+    <input type="text" name="adCategory" id="adCategory" [(ngModel)]="adLender.adCategory" required>
+</div>
+<div>
+    <label for="adPicture">Ad Picture</label>
+    <input type="text" name="adPicture" id="adPicture" [(ngModel)]="adLender.adPicture">
+</div>
+
 <button>Ajouter une annonce</button>
+
+</form>

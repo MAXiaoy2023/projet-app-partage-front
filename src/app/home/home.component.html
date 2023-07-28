@@ -1,5 +1,17 @@
 <h1> Tous les annonces</h1>
-<app-ad-lender-item [adLender]="item" (delete)="removeAdLender($event)" *ngFor="let item of list"/>
+<div *ngFor="let item of list">
+    <a routerLink="adLender/{id}"><h2>{{item.adTitle}}</h2></a>
+    <p>{{item.adDescription}}</p>
+    <p>{{item.adCategory}}</p>
+    <p>{{item.adPicture}}</p>
+    <button> Demander l'objet</button>
+    <button> Modifier l'annonce</button>
+    <button> Supprimer l'annonce</button>
+</div> 
 
-<app-form-ad-lender (added)="addToList($event)"/>
+<div>
+    <a routerLink=""><button>Ajouter une annonce</button></a>
+</div>
+
+
 

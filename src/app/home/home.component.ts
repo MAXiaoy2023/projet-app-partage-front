@@ -1,12 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { AdLender } from '../entities';
 import { AdLenderService } from '../ad-lender.service';
+import { environment } from 'src/environments/environment';
+
 
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'], 
+ 
 })
 export class HomeComponent implements OnInit {
   list:AdLender[]=[];

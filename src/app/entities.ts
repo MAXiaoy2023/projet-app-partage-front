@@ -18,7 +18,7 @@ export interface AdLender {
     adCategory:string;
     adKeywords:string;
     adPicture:string;
-    createdDate: string;
+    createdDate: Date;
     adStatus:boolean;
     city:string;
     user:string;

@@ -1,4 +1,9 @@
-<article>
-    <h2><a routerLink="/adLender/{{adLender.id}}">{{adLender.adTitle}}</a></h2>
+<ng-container>
+    <h2><a routerLink="api/adLender/{{adLender.id}}">{{adLender.adTitle}}</a> 
+        <button (click)="buttonOnClick()">X</button></h2>
     <p>{{adLender.adDescription}}</p>
-</article>
+    <p>{{adLender.adPicture}}</p>
+    <p>Ville: {{adLender.city}}</p>
+
+</ng-container>
+

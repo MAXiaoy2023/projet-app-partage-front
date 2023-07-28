@@ -9,13 +9,13 @@ import { AdLender } from '../entities';
 export class FormAdLenderComponent {
 @Input()
 adLender:AdLender ={
-  adTitle: '', adDescription: '', adCategory: '', adKeywords: '', adPicture: '', adStatus: true, city: '', createdDate:"",
+  adTitle: '', adDescription: '', adCategory: '', adKeywords: '', adPicture: '', adStatus: true, city: '', createdDate: new Date,
   user:''};
 
 @Output()
 added = new EventEmitter<AdLender>();
 
-hundleSubmit()
+handleSubmit()
 {
   this.added.emit(this.adLender);
 }
