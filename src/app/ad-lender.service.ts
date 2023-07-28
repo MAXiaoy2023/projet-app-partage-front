@@ -15,7 +15,7 @@ export class AdLenderService {
   }
 
   fetchOne(id:number) {
-    return this.http.get<AdLender>(environment.serverUrl+'api/adLender/'+id)
+    return this.http.get<AdLender>(environment.serverUrl+'/api/adLender/'+id)
   }
 
   add(adLender:AdLender){
@@ -27,6 +27,6 @@ export class AdLenderService {
   }
 
   delete(id:number) {
-    return this.http.delete<AdLender>(environment.serverUrl+'api/adLender/'+id)
+    return this.http.delete<AdLender>(environment.serverUrl+'/api/adLender/'+id)
   }
 }

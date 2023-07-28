@@ -1,16 +1,14 @@
 <h1> Tous les annonces</h1>
 <div *ngFor="let item of list">
-    <a routerLink="adLender/{id}"><h2>{{item.adTitle}}</h2></a>
-    <p>{{item.adDescription}}</p>
+    <a routerLink="adLender/{{item.id}}"><h2>{{item.adTitle}}</h2></a>
     <p>{{item.adCategory}}</p>
-    <p>{{item.adPicture}}</p>
-    <button> Demander l'objet</button>
-    <button> Modifier l'annonce</button>
-    <button> Supprimer l'annonce</button>
+    <p>{{item.adDescription}}</p>
+    
+    <button> Envoyer un message à l'annonceur</button>
 </div> 
 
 <div>
-    <a routerLink=""><button>Ajouter une annonce</button></a>
+    <button>Ajouter une annonce</button>
 </div>
 
 
