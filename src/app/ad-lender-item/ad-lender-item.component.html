@@ -1,9 +1,9 @@
-<ng-container>
-    <h2><a routerLink="api/adLender/{{adLender.id}}">{{adLender.adTitle}}</a> 
-        <button (click)="buttonOnClick()">X</button></h2>
+<div>
+    <h2><a routerLink="adLender/{{adLender.id}}">{{adLender.adTitle}}</a></h2>
     <p>{{adLender.adDescription}}</p>
     <p>{{adLender.adPicture}}</p>
     <p>Ville: {{adLender.city}}</p>
-
-</ng-container>
+    <button> Envoyer un message à l'annonceur</button>
+    <button (click)="buttonOnClick()">Supprimer l'annonce</button>
+</div>
 
